@@ -265,7 +265,7 @@ const main = async () => {
             try {
                 const userData = await getUserInfo(token, proxy);
 
-                if (userData?data) {
+                if (userData?.data) {
                     const { email, verified, current_tier, points_balance } = userData.data;
                     logger.info(`Account ${index + 1} info:`, { email, verified, current_tier, points_balance });
                 }
